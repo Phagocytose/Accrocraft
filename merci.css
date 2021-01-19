@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #faf6f7;
+}
+
+section {
+  background-color: #eaebed;
+}
+
+#reste {
+  position: relative;
+  background-color: #1b263b;
+}
+
+.contenu {
+  background-color: #eaebed;
+  min-height: 600px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  align-content: center;
+  align-items: center;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+grid-column-gap: 20px;
+grid-row-gap: 25px;
+}

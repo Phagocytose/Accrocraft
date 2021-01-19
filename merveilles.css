@@ -1,0 +1,239 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #faf6f7;
+}
+
+section {
+  background-color: #eaebed;
+}
+
+.prepaxe {
+  height: 28px;
+  background-color: #F4F6F7;
+  position: relative;
+}
+
+#paxe {
+  height: 1000px;
+  display: block;
+  position: relative;
+}
+
+.pos {
+  position: absolute;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  width: 100%;
+  background-repeat: repeat-x;
+  height: 1000px;
+  position: fixed;
+}
+
+.layer_0 { background-image: url(img/axe/e0.png); }
+.layer_1 { background-image: url(img/axe/e1.png); }
+.layer_2 { background-image: url(img/axe/e1b.png); }
+.layer_3 { background-image: url(img/axe/e2.png); }
+.layer_4 { background-image: url(img/axe/e3.png); }
+.layer_5 { background-image: url(img/axe/e4.png); }
+.layer_6 { background-image: url(img/axe/e5.png); }
+.layer_7 { background-image: url(img/axe/e6.png); }
+.layer_8 { background-image: url(img/axe/e7.png); }
+
+.bloc-1 {
+  opacity: 0;
+}
+
+#altpaxe {
+  display: none;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  opacity: 0;
+}
+
+#reste {
+  position: relative;
+  background-color: #1b263b;
+}
+
+.contenu {
+  background-color: #eaebed;
+  min-height: 860px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  align-content: center;
+  align-items: center;
+}
+
+.galerie-scroll {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  align-items: center;
+  padding: 30px 0 70px 0;
+  cursor: pointer;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #8B939c #eaebed;
+  scrollbar-width: thin;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-left: 3rem;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 15;
+  padding: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #eaebed;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(27, 38, 59,0.7);
+  margin: auto;
+  padding: 15px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 1030px;
+}
+
+/* The Close Button */
+.close {
+  color: #231f20;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 15px;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: #1b263b;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnails {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  align-items: center;
+  width: 97%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding-bottom: 10px;
+  scrollbar-color: #8B939c #eaebed;
+  scrollbar-width: thin;
+}
+
+.demo {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}

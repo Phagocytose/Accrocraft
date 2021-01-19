@@ -1,0 +1,417 @@
+* {
+  box-sizing:border-box
+}
+
+#craft-s1 {
+  background-color: #eaebed;
+}
+
+#craft-s2 {
+  background-color: #eaebed;
+}
+
+#craft-s3 {
+  background-color: #fdfcf3;
+}
+
+#craft-s4 {
+  background-color: rgba(32,31,32,0.9);
+  color: #fff;
+}
+
+#craft-s5 {
+  background-color: #d2d5df;
+}
+
+#sa1-contenu {
+  background: url(img/an-axe.jpg) center 0 no-repeat fixed;
+  margin: 4rem auto 0 auto;
+  height: 800px;
+}
+
+.s1-texte {
+  color: #fff;
+  background-color: #59546C;
+  text-align: center;
+  margin: 0 100px;
+  width: 550px;
+  position: relative;
+  top: 25%;
+  left:7%;
+  vertical-align: middle;
+  padding: 50px 20px;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .s1-texte {
+    margin: 0 auto;
+    top: 20%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 985px) {
+  body {
+    font-size: 14px;
+  }
+
+  .s1-texte {
+    margin: 0 auto;
+    width: auto;
+    max-width: 500px;
+    top: 20%;
+    left: 0%;
+  }
+}
+
+.s2-vignettes {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.s2-row {
+  margin: 8px 8px;
+}
+
+.s2-row,
+.s2-row > .s2-column {
+  padding: 15px;
+}
+
+.s2-column {
+  float: left;
+  width: 25%;
+  height: 570px;
+  background-color: #fff;
+}
+
+.s2-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.s2-content img {
+  border: 1px solid #000;
+}
+
+.s2-content h3 {
+  text-decoration: underline;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .s2-column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .s2-column {
+    width: 100%;
+  }
+}
+
+
+#craft-s1, #craft-s3, .s2-contenu, .s4-contenu, .s5-contenu, .s6-contenu {
+  padding: 20px 0;
+}
+
+
+.s3-tab {
+  display: flex;
+  align-items: stretch;
+  border: 3px solid #fff;
+  margin: 20px auto;
+}
+.s3-tab a {
+  text-decoration: none;
+  color: #ffcea3;
+}
+
+.s3-tab a i {
+  color: #ffcea3;
+}
+
+.s3-gauche {
+  width: 50%;
+  padding: 100px 25px;
+  flex: 0 1 auto;
+  border-right: 3px solid #fff;
+  color: #fff;
+  background-color: #68546c;
+}
+
+.s3-droite {
+  width: 50%;
+  padding: 100px 5px;
+  flex: 0 1 auto;
+  color: #fff;
+  background-color: #59546C;
+}
+
+.s4-texte {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.s4-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  max-width: 2000px;
+  margin: 20px auto;
+}
+
+.s4-gauche {
+  width: 50%;
+  padding: 5px 5px;
+  margin: 3rem 0 2rem 0;
+  flex: 0 1 auto;
+  border-right: 1px solid #000;
+}
+
+.s4-droite {
+  width: 50%;
+  padding: 5px 5px;
+  margin: 3rem 0 2rem 0;
+  flex: 0 1 auto;
+}
+
+#choix1 i, #choix2 i {
+  cursor: pointer;
+}
+
+#choix1 i:hover, #choix2 i:hover {
+  color: #e6077e;
+}
+
+.hidden { display:none;}
+
+
+#s5-federation, #s5-communes {
+  padding-bottom: 25px;
+  border: 1px solid #000;
+}
+
+#s5-federation {
+  float: left;
+  width: 50%;
+  background-color: rgba(32,31,32,0.4);
+  color: #fff;
+  min-height: 947px;
+}
+
+#s5-communes {
+  float: right;
+  width: 50%;
+  background-color: rgba(32,31,32,0.4);
+  color: #fff;
+}
+
+.s5-communes, .s5-fed {
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.wrap-com-fed {
+  margin-top: 15px;
+}
+
+.wrap-com-fed:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.s5-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+}
+
+.s5-gauche {
+  width: 20%;
+  /* margin: 3rem 0 3rem 0; */
+  flex: 0 1 auto;
+  border-right: 1px solid #000;
+}
+
+.s5-droite {
+  width: 80%;
+  /* margin: 3rem 0 3rem 0; */
+  flex: 0 1 auto;
+}
+
+@media screen and (min-width: 2000px) {
+  .s5-gauche {
+    width: 30%;
+  }
+  .s5-droite {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .s5-gauche {
+    width: 40%;
+    border-right: 0px;
+  }
+  .s5-droite {
+    width: 60%;
+  }
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  margin: 0 auto;
+}
+
+.img-galerie {
+    display: block;
+}
+
+.column {
+  padding: 5px;
+  width: 120px;
+  height: 120px;
+}
+
+.column img {
+    border: 1px solid #000;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  top: -102px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 102px;
+  width: 101px;
+  opacity: 0;
+  transition: .6s ease;
+  background-color: rgba(165,14,142,1);
+  border: 1px solid #fff;
+}
+
+.text-overlay {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.s5-slideshow, .s5-vignettes {
+  flex: 0 1 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1269.5px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 16px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,153 @@
+
+#btm {
+  position: relative;
+  background-image: url(img/illu-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #b9ebff;
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 100%;
+  min-height: 130px;
+  overflow: hidden;
+}
+
+.poursuite {
+  width: 300px;
+  height: 80px;
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.poursuite {
+  -webkit-animation-name: poursuite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 40s;
+
+  -moz-animation-name: poursuite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: forwards;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 40s;
+
+  animation-name: poursuite;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+}
+
+@-webkit-keyframes poursuite {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -moz-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+}
+
+.footer-image {
+  height: 110px;
+  background-size: 1800px;
+}
+
+footer {
+  background-image: url(img/texture2.jpg);
+  background-repeat: repeat-x;
+  height: 200px;
+  color: #f9f8ef;
+  z-index: 7;
+  position:relative;
+}
+
+footer a {
+  color: #f9f8ef;
+  text-decoration: none;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: -0.1em;
+}
+
+.fcontenu {
+  max-width: 87.5rem;
+  padding: 25px 1rem;
+  margin: 0 auto;
+}
+
+.fliens {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.fliens span {
+  color: #f9f8ef;
+  font-size: 16px;
+  margin: 0 1rem 0 .5rem;
+  text-align: center;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-twitch {
+  color: #9146ff;
+}
+
+.fa-hat-wizard {
+  color: #7dd920;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.copyright span {
+  letter-spacing: .3rem;
+  font-weight: bold;
+  color: #f9f8ef;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 1rem 0 .5rem;
+  text-align: center;
+  opacity: .6;
+}
+
+.cell {
+  flex-basis: auto;
+  flex: 0 0 auto;
+  min-height: 0px;
+  min-width: 0px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: calc(100%- 1.875rem);
+}
