@@ -90,7 +90,7 @@
                 <div class="carre2">
                   <div>
                     <img class="icon_m" src="img/icon-minecraft.png" alt="Icône Minecraft"/>
-                    <p class="box">Java Edition </br>v.1.16.2</p>
+                    <p class="box">Java Edition </br>v.1.16.5</p>
                   </div>
                 </div>
                 <div id="copier" class="rect">
